@@ -1,0 +1,10 @@
+.mainContainer{
+    height: 100vh;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 23px 0px 30px;
+    height: 80px;
+}
