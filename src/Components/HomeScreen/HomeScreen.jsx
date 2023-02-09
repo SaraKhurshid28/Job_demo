@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Images from "../../Constants/constants";
-import { Button, Divider, Drawer, Menu } from "antd";
+import { Button, Divider, Drawer } from "antd";
 import "./HomeScreen.css";
 
 export function HomeScreen() {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
-  const [selectedMenu, setSelectedMenu] = useState(0);
+  const [selectedMenu, setSelectedMenu] = useState("home");
 
   const showDrawer = () => {
     setOpen(true);
@@ -15,12 +17,11 @@ export function HomeScreen() {
     setOpen(false);
   };
 
-  const items = [
-    "Menu 1",
-    {
-      type: "divider",
-    },
-  ];
+  useEffect(() => {
+    if (selectedMenu == "services") navigate("/services");
+    else if (selectedMenu == "blogs") navigate("/blogs");
+  }, [selectedMenu]);
+
   return (
     <div
       className="mainContainer"
@@ -42,9 +43,19 @@ export function HomeScreen() {
         >
           <div className="drawerTitle">MAIN MENU</div>
           <Divider className="dividerStyle" />
-          <p className="drawerTitle">ABOUT</p>
-          <p className="drawerTitle">SERVICES</p>
-          <p className="drawerTitle">BLOG</p>
+          <p
+            className="drawerTitle"
+            key={"about"}
+            onClick={() => navigate("/about")}
+          >
+            ABOUT
+          </p>
+          <p className="drawerTitle" onClick={() => navigate("/services")}>
+            SERVICES
+          </p>
+          <p className="drawerTitle" onClick={() => navigate("/blogs")}>
+            BLOG
+          </p>
         </Drawer>
       </div>
       <div className="constStyle">
@@ -58,7 +69,7 @@ export function HomeScreen() {
           </div>
         </div>
         <div>
-          {[0, 1, 2, 3, 4, 5, 6].map((item) => {
+          {["home", "about", "services", "blogs"].map((item) => {
             return (
               <div
                 key={item}

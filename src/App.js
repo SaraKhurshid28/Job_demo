@@ -1,9 +1,17 @@
 import "./App.css";
-import HomeScreen from "./Components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomeScreen, Services, Blog } from "./Components";
 function App() {
   return (
     <div>
-      <HomeScreen />
+      <Router>
+        <Routes>
+          <Route extact path="/" element={<HomeScreen />} />
+          <Route extact path="services" element={<Services />} />
+          <Route extact path="blogs" element={<Blog />} />
+          {/* <Route extact path="services" element={<Services />} /> */}
+        </Routes>
+      </Router>
     </div>
   );
 }
