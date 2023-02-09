@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HomeScreen, Services, Blog } from "./Components";
+import { HomeScreen, Services, Blog, Insta } from "./Components";
 function App() {
   return (
     <div>
@@ -9,7 +9,7 @@ function App() {
           <Route extact path="/" element={<HomeScreen />} />
           <Route extact path="services" element={<Services />} />
           <Route extact path="blogs" element={<Blog />} />
-          {/* <Route extact path="services" element={<Services />} /> */}
+          <Route extact path="instra" element={<Insta />} />
         </Routes>
       </Router>
     </div>

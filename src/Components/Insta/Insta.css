@@ -1,0 +1,29 @@
+.instaMainContainer{
+    background-color: #151515;
+    height: 100vh;
+}
+
+.instaMainHeader{
+    display: flex;
+    justify-content: center;
+    height: 53px;
+    padding-top: 20px;
+}
+
+.instaVerticalLine{
+    border: 2px solid #FFC700;
+    height: 53px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.instaHeadingContainer{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 51px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}

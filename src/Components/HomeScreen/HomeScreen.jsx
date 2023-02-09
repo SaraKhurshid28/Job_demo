@@ -20,6 +20,7 @@ export function HomeScreen() {
   useEffect(() => {
     if (selectedMenu == "services") navigate("/services");
     else if (selectedMenu == "blogs") navigate("/blogs");
+    else if (selectedMenu == "instra") navigate("instra");
   }, [selectedMenu]);
 
   return (
@@ -45,10 +46,10 @@ export function HomeScreen() {
           <Divider className="dividerStyle" />
           <p
             className="drawerTitle"
-            key={"about"}
-            onClick={() => navigate("/about")}
+            key={"instra"}
+            onClick={() => navigate("/instra")}
           >
-            ABOUT
+            INSTRA
           </p>
           <p className="drawerTitle" onClick={() => navigate("/services")}>
             SERVICES
@@ -69,7 +70,7 @@ export function HomeScreen() {
           </div>
         </div>
         <div>
-          {["home", "about", "services", "blogs"].map((item) => {
+          {["home", "services", "blogs", "instra"].map((item) => {
             return (
               <div
                 key={item}
