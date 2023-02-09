@@ -17,10 +17,13 @@ export function HomeScreen() {
     setOpen(false);
   };
 
+  const navigationTesting = () => {
+    if (selectedMenu === "services") navigate("/services");
+    else if (selectedMenu === "blogs") navigate("/blogs");
+    else if (selectedMenu === "instra") navigate("instra");
+  };
   useEffect(() => {
-    if (selectedMenu == "services") navigate("/services");
-    else if (selectedMenu == "blogs") navigate("/blogs");
-    else if (selectedMenu == "instra") navigate("instra");
+    navigationTesting();
   }, [selectedMenu]);
 
   return (
@@ -75,7 +78,7 @@ export function HomeScreen() {
               <div
                 key={item}
                 className={
-                  selectedMenu == item
+                  selectedMenu === item
                     ? "sideItemsSelected"
                     : "sideItemsNonselected"
                 }

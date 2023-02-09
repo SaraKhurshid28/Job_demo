@@ -9,7 +9,7 @@ const Insta = () => {
       <div className="instaMainContainer">
         <div className="instaMainHeader">
           <div>
-            <img src={Images.InstaImage} alt="insta image" />
+            <img src={Images.InstaImage} alt="insta" />
           </div>
           <div className="instaVerticalLine"></div>
           <div className="instaHeadingContainer">thetalhafakhar</div>
@@ -21,7 +21,7 @@ const Insta = () => {
                 src={Images.SeptImage}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
             <Col span={8}>
@@ -29,7 +29,7 @@ const Insta = () => {
                 src={Images.OctImage2}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
             <Col span={8}>
@@ -37,7 +37,7 @@ const Insta = () => {
                 src={Images.OctImage}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
           </Row>
@@ -47,7 +47,7 @@ const Insta = () => {
                 src={Images.ITImage2}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
             <Col span={8}>
@@ -55,7 +55,7 @@ const Insta = () => {
                 src={Images.GrowImage}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
             <Col span={8}>
@@ -63,7 +63,7 @@ const Insta = () => {
                 src={Images.TFImage}
                 width={280}
                 height={280}
-                alt="Image Not Found"
+                alt="Not Found"
               />
             </Col>
           </Row>

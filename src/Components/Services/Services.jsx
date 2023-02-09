@@ -9,19 +9,19 @@ export function Services() {
         <div className="mainHeadingContainer">SERVICES</div>
         <div className="mainItem">
           <div className="imageStyleBox">
-            <img src={Images.Digital} />
+            <img src={Images.Digital} alt="not found" />
           </div>
           <div className="textStyleLeft">SOCIAL MEDIA MARKETING</div>
         </div>
         <div className="mainItem">
           <div className="textStyleRight">PPC CAMPAIGNS</div>
           <div className="imageStyleBox">
-            <img src={Images.PPC} />
+            <img src={Images.PPC} alt="not found" />
           </div>
         </div>
         <div className="mainItem">
           <div className="imageStyleBox">
-            <img src={Images.Assest} />
+            <img src={Images.Assest} alt="not found" />
           </div>
           <div className="textStyleLeft textSearchFont">
             SEARCH ENGINE OPTIMIZATION
@@ -30,7 +30,7 @@ export function Services() {
         <div className="mainItem">
           <div className="textStyleRight">SOCIAL MEDIA MARKETING</div>
           <div className="imageStyleBox">
-            <img src={Images.Consult} />
+            <img src={Images.Consult} alt="not found" />
           </div>
         </div>
       </div>

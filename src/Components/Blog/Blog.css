@@ -63,7 +63,7 @@
     line-height: 27px;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     color: rgba(255, 199, 0, 0.7);
     height: 48vh;
 }
