@@ -1,6 +1,7 @@
 .instaMainContainer{
     background-color: #151515;
     height: 100vh;
+    color: #FFC700
 }
 
 .instaMainHeader{
@@ -26,4 +27,12 @@
     display: flex;
     align-items: center;
     color: #FFFFFF;
+}
+.instaRowContainer{
+    margin: 2px 16.5% 0px 17%;
+    text-align: center;
+}
+
+.instaRowDiv{
+margin-top: 50px;
 }
