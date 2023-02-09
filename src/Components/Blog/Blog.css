@@ -1,0 +1,69 @@
+.blogMainContainer{
+    background-color: black;
+    height: 100vh;
+}
+
+.blogMainHeading{
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 77px;
+    line-height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFC700;
+    padding-top: 10px;
+}
+
+.col_style{
+    color: #FFC700;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col_styleImage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFC700;
+    height: 200px;
+    padding-top: 40px;
+}
+
+.blogImageData{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.blogImageText{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    height: 93px;
+    width: 366px;
+    margin-top: 25px;
+}
+
+.blogMoreButtoDiv{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: rgba(255, 199, 0, 0.7);
+    height: 48vh;
+}

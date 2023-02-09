@@ -1,10 +1,83 @@
 .mainContainer{
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+
 
 .headerContainer{
     display: flex;
     justify-content: space-between;
     padding: 30px 23px 0px 30px;
     height: 80px;
+}
+
+.ant-btn-default{
+    height: 76px !important;
+    background-color: black;
+    border-color: black !important;
+}
+
+.constStyle{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 243px;
+    padding-top: 243px;
+    padding-right: 80px;
+}
+
+.textContainer{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 91px;
+    color: #FFC700;
+}
+
+.digitTextContainer{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 74px;
+    line-height: 91px;
+    color: #FFFFFF;
+    text-shadow:rgb(192, 191, 191) 2px 0 20px;  
+}
+.borderConatiner{
+    border-bottom: 3px solid #FFC700;
+    margin-top: -24px;
+    margin-left: 31%;
+    width: 508px;
+}
+.sideItemsSelected{
+    width: 11px;
+    height: 11px;
+    background-color: #FFC700;
+    border-radius: 50%;
+    margin-top: 23px;
+}
+
+.sideItemsNonselected{
+    width: 7px;
+    height: 7px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-top: 23px;
+    margin-left: 2px;
+}
+.drawerTitle{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 28px;
+    color: #FFC700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dividerStyle{
+    margin-left: -25px;
+    width: 260px;
+    margin-top: 15px !important;
+    border: 2px solid black;
 }
